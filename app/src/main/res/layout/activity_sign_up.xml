@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    tools:context=".SignUpActivity"
+    android:onClick="rootLayOutTapped"
+    android:background="@color/appBackground"
+    >
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="118dp"
+        android:layout_height="141dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/twit"
+        app:layout_constraintBottom_toTopOf="@+id/enterEmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintVertical_chainStyle="spread_inside" />
+
+    <EditText
+        android:id="@+id/enterEmail"
+        android:layout_width="252dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="412dp"
+        android:ems="10"
+        android:hint="Please enter your email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.553"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/enterName"
+        android:layout_width="252dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="370dp"
+        android:ems="10"
+        android:hint="Please enter your username"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.553"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enterEmail"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/enterPassword"
+        android:layout_width="252dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="290dp"
+        android:ems="10"
+        android:hint="Please enter password"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.553"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enterName"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/SignUp"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="@color/signUpColor"
+        android:text="Sign Up"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enterPassword" />
+
+    <Button
+        android:id="@+id/Login"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="80dp"
+        android:background="@color/loginColor"
+        android:text="Log In"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SignUp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
